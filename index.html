@@ -1,0 +1,31 @@
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Grid container for thumbnail images -->
+  <div class="grid">
+    <!-- Each thumbnail image has a data-src and a data-caption attribute -->
+    <img src="image1.jpg" data-src="image1-large.jpg" data-caption="Caption for image 1">
+    <img src="image2.jpg" data-src="image2-large.jpg" data-caption="Caption for image 2">
+    <img src="image3.jpg" data-src="image3-large.jpg" data-caption="Caption for image 3">
+    <img src="image4.jpg" data-src="image4-large.jpg" data-caption="Caption for image 4">
+    <img src="image5.jpg" data-src="image5-large.jpg" data-caption="Caption for image 5">
+    <img src="image6.jpg" data-src="image6-large.jpg" data-caption="Caption for image 6">
+  </div>
+
+  <!-- Modal element for larger images -->
+  <div class="modal">
+    <!-- Image element inside the modal -->
+    <img class="modal-image">
+    <!-- Caption element inside the modal -->
+    <p class="modal-caption"></p>
+    <!-- Navigation buttons inside the modal -->
+    <button class="modal-button modal-button-left"><</button>
+    <button class="modal-button modal-button-right">></button>
+  </div>
+
+  <!-- Script for the lightbox effect and navigation -->
+  <script src="script.js"></script>
+</body>
+</html>

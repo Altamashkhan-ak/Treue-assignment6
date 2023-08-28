@@ -1,0 +1,60 @@
+/* Grid layout for thumbnail images */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin: 20px;
+  }
+
+  /* Style for the modal element */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Style for the image element inside the modal */
+  .modal-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: 25rem;
+    width: 45rem;
+    margin: auto;
+  }
+
+  /* Style for the caption element inside the modal */
+  .modal-caption {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Style for the navigation buttons inside the modal */
+  .modal-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Position for the left button */
+  .modal-button-left {
+    left: 10px;
+  }
+
+  /* Position for the right button */
+  .modal-button-right {
+    right: 10px;
+  }
